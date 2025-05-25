@@ -21,9 +21,9 @@ login_manager.login_view = 'login'
 app.config['MAIL_SERVER'] = 'smtp.mail.yahoo.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 't.edureiss@yahoo.com.br'  
-app.config['MAIL_PASSWORD'] = 'mfsfgcfkdxvbthls'    
-app.config['MAIL_DEFAULT_SENDER'] = 't.edureiss@yahoo.com.br' 
+app.config['MAIL_USERNAME'] = 'meuemail@yahoo.com.br'  
+app.config['MAIL_PASSWORD'] = 'senhapp'    
+app.config['MAIL_DEFAULT_SENDER'] = 'meuemail@yahoo.com.br' 
 mail = Mail(app)
 
 # Serializador para tokens seguros
