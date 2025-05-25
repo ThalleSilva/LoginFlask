@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" id="formId" method="post">
+        Nome: <input type="text" name="nomeForm" id=""><br>
+        Senha: <input type="password" name="senhaForm" id=""><br>
+        <button  name="acao" value="log" type="submit">Login</button>
+        <div id="divBtn">
+            <button id="rdfSenha" name="acao" value="rdfSenha" type="submit">Esqueci minha senha</button><br>
+            <button id="btnCad" name="acao" value="cad" type="submit">Cadastrar</button></div>
+        
+
+    </form>
+</body>
+</html>

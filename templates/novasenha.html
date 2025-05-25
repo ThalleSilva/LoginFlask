@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Senha</title>
+</head>
+<body>
+    {% if erro %}
+        <script>
+            alert("{{ erro }}");
+        </script>
+    {% endif %}
+    <form action="" method="post">
+        Digite sua nova senha: <input type="password" name="senhaForm" id=""><br>
+        Confirme a nova senha:  <input type="password" name="confirmForm" id=""><br>
+        <button type="submit">Alterar</button>        
+
+
+    </form>
+</body>
+</html>

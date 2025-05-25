@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    {% if erro %}
+        <script>
+            alert("{{ erro }}");
+        </script>
+    {% endif %}
+
+    <form action="" method="post">
+        Nome: <input type="text" name="nomeForm" id=""><br>
+        Senha: <input type="password" name="senhaForm" id=""><br>
+        Confirmar Senha:  <input type="password" name="confirmForm" id=""><br>
+        Digite seu e-mail:<input type="text" name="emailForm" id="">
+        <button type="submit">Cadastrar</button>        
+
+
+    </form>
+</body>
+</html>

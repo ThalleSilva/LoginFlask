@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Senha</title>
+</head>
+<body>
+    {% if erro %}
+    <script>
+        alert("{{ erro }}");
+    </script>
+    {% endif %}
+    <form action="" method="post">
+        Digite seu e-mail:<input type="text" name="emailForm" id=""><br>
+        <button type="submit">Prosseguir</button>        
+
+
+    </form>
+</body>
+</html>

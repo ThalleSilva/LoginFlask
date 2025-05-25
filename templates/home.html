@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+</head>
+<body>
+    <div class="container">
+        {% if current_user.is_authenticated %}
+            <h1>Olá, {{ current_user.nome }}!</h1><br>
+            <h2>Você está logado.</h2>
+        {% endif %}
+
+        <form action="" method="POST">
+            <button type="submit" name="acao" value="logout">Deslogar</button>
+            <button type="submit" name="acao" value="alterar_senha">Alterar Senha</button>
+        </form>
+
+
+        <img src="{{ url_for('static', filename='feliz.jpg') }}" alt="Imagem feliz" style="width: 200px; display: block; margin: 20px auto 0;">
+    </div>
+</body>
+
+</html>
