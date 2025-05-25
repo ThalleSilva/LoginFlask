@@ -9,11 +9,11 @@ import hashlib
 app = Flask(__name__)
 app.secret_key = 'lancode'
 
-# Configurações de banco de dados
+
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
 db.init_app(app)
 
-# Login Manager
+# Login 
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
@@ -26,7 +26,7 @@ app.config['MAIL_PASSWORD'] = 'senhapp'
 app.config['MAIL_DEFAULT_SENDER'] = 'meuemail@yahoo.com.br' 
 mail = Mail(app)
 
-# Serializador para tokens seguros
+# Criador para tokens seguros
 s = URLSafeTimedSerializer(app.secret_key)
 
 def hash(txt):
